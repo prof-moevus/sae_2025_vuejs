@@ -7,7 +7,7 @@
 
   <p>Quel est la couleur du ciel ?</p>
   <ul>
-    <li>bleu</li>
+    <li> <input type="checkbox"/> bleu</li>
     <li>transparent</li>
     <li>rose</li>
     <li>aucune de ces réponses</li>
