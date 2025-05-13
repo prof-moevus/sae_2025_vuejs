@@ -19,12 +19,13 @@ function myLog() {
 
   <div class="exemple">
     <Question01 v-if="showQuestion01"/>
+
+    <p v-show="!showQuestion01" >demo v0show</p>
   </div>
 
 </template>
 
 <style>
-
 body {
   background-color: #a3a3a3;
 }
@@ -32,6 +33,5 @@ body {
   border: 8px solid #000000;
   margin: 20px auto;
   padding: 10px;
-
 }
 </style>
