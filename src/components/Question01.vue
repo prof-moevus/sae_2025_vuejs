@@ -1,6 +1,5 @@
 <script setup>
 import {ref} from 'vue'
-
 const answer = ref("")
 </script>
 
@@ -11,20 +10,19 @@ const answer = ref("")
   <input id="answer" v-model="answer"/>
   <p class="form-invalid" v-if="answer.length>1">Votre réponse doit faire un caractère</p>
 
-
   <div class="display-answers">
-  <p v-if="answer === 'A'">
-    C'est A.
-  </p>
-  <h2 v-else-if="answer === 'B'">
-    C'est B.
-  </h2>
-  <div v-else-if="answer === 'C'">
-    C'est C.
-  </div>
-  <div v-else>
-    Ce n'est ni A, ni B, ni C.
-  </div>
+    <p v-if="answer === 'A'">
+      C'est A.
+    </p>
+    <h2 v-else-if="answer === 'B'">
+      C'est B.
+    </h2>
+    <div v-else-if="answer === 'C'">
+      C'est C.
+    </div>
+    <div v-else>
+      Ce n'est ni A, ni B, ni C.
+    </div>
   </div>
   <p>fin du quiz.</p>
 </template>
