@@ -2,6 +2,8 @@
 import {ref} from 'vue'
 import Question01 from "@/components/Question01.vue";
 import DemoCyclesDeVie from "@/components/DemoCyclesDeVie.vue";
+import DemoListRendering from "@/components/DemoListRendering.vue";
+import DemoVForAndRef from "@/components/DemoVForAndRef.vue";
 
 const showQuestion01 = ref(false);
 function myLog() {
@@ -20,7 +22,9 @@ function myLog() {
 
   <div class="exemple">
 <!--    <Question01 v-if="showQuestion01"/>-->
-<DemoCyclesDeVie v-if="showQuestion01"></DemoCyclesDeVie>
+<!--<DemoCyclesDeVie v-if="showQuestion01"></DemoCyclesDeVie>-->
+<!--    <DemoListRendering>-->
+    <DemoVForAndRef/>
   </div>
 
 </template>
