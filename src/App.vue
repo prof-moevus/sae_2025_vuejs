@@ -1,6 +1,7 @@
 <script setup>
 import {ref} from 'vue'
 import Question01 from "@/components/Question01.vue";
+import DemoCyclesDeVie from "@/components/DemoCyclesDeVie.vue";
 
 const showQuestion01 = ref(false);
 function myLog() {
@@ -14,13 +15,12 @@ function myLog() {
   <h2>Liste des exemples</h2>
     <div>
       <label for="Question01">Question 01 : </label>
-      <input v-model="showQuestion01" id="Question01" @click="myLog" type="checkbox" name="Question01">
+      <input v-model="showQuestion01" id="Question01" type="checkbox" name="Question01">
     </div>
 
   <div class="exemple">
-    <Question01 v-if="showQuestion01"/>
-
-    <p v-show="!showQuestion01" >demo v0show</p>
+<!--    <Question01 v-if="showQuestion01"/>-->
+<DemoCyclesDeVie v-if="showQuestion01"></DemoCyclesDeVie>
   </div>
 
 </template>
